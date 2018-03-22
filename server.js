@@ -7,7 +7,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/Tododb');
+mongoose.connect('mongodb://ecmongodb:g9VEPWmjgi0HCodUcOrkFftV1W8qu1v77QKAkzoLIGZyXMf9XJSWEg2W29hPvihIVipKuCFd9zhP02jyAq4cbQ==@ecmongodb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb/Tododb');
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
