@@ -1,0 +1,29 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "RestfullAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "no test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliko86/todolistapi.git"
+  },
+  "keywords": [
+    "RESTfull"
+  ],
+  "author": "Eli Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliko86/todolistapi/issues"
+  },
+  "homepage": "https://github.com/eliko86/todolistapi#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  }
+}
