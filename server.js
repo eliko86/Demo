@@ -7,7 +7,7 @@ var express = require('express'),
 
 /// mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://ecmongodb:g9VEPWmjgi0HCodUcOrkFftV1W8qu1v77QKAkzoLIGZyXMf9XJSWEg2W29hPvihIVipKuCFd9zhP02jyAq4cbQ==@ecmongodb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb/Tododb');
+mongoose.connect('mongodb://otexdemocosmosdb:ogXTBFZQQwakUGKiwmTPViYnSG07HT1uh3oiziNu7zdQ0xjlBHDoOK46Hdy9TwSruxqknG0r7r5qepyja1oWvw==@otexdemocosmosdb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb/Tododb');
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
