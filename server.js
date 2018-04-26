@@ -5,16 +5,14 @@ var express = require('express'),
   Task = require('./api/models/todoListModel'), //created model loading here
   bodyParser = require('body-parser');
 
-/// mongoose instance connection url connection
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://otexdemocosmosdb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb/Tododb',
-{
-  auth: {
-   user: 'otexdemocosmosdb',
-   password: 'ogXTBFZQQwakUGKiwmTPViYnSG07HT1uh3oiziNu7zdQ0xjlBHDoOK46Hdy9TwSruxqknG0r7r5qepyja1oWvw==',
-  }}, function (err, db) {
-  db.close();
-});
+  /// mongoose instance connection url connection
+  mongoose.Promise = global.Promise;
+  mongoose.connect('mongodb://otexdemocosmosdb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb',
+  {
+    auth: {
+     user: 'otexdemocosmosdb',
+     password: 'ogXTBFZQQwakUGKiwmTPViYnSG07HT1uh3oiziNu7zdQ0xjlBHDoOK46Hdy9TwSruxqknG0r7r5qepyja1oWvw==',
+    }});
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
