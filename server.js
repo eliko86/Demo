@@ -7,7 +7,14 @@ var express = require('express'),
 
 /// mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://otexdemocosmosdb:ogXTBFZQQwakUGKiwmTPViYnSG07HT1uh3oiziNu7zdQ0xjlBHDoOK46Hdy9TwSruxqknG0r7r5qepyja1oWvw==@otexdemocosmosdb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb/Tododb');
+mongoose.connect('mongodb://otexdemocosmosdb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb/Tododb',
+{
+  auth: {
+   user: 'otexdemocosmosdb',
+   password: 'ogXTBFZQQwakUGKiwmTPViYnSG07HT1uh3oiziNu7zdQ0xjlBHDoOK46Hdy9TwSruxqknG0r7r5qepyja1oWvw==',
+  }}, function (err, db) {
+  db.close();
+});
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
